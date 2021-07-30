@@ -38,6 +38,13 @@ ipcalc 192.65.24.12/24
 ### Routing
 https://elixir.bootlin.com/linux/v4.15.18/source/net/ipv4/devinet.c#L2250
 ```
+# Linux Routing Table(RT) 
 # To inspect routing tables
+
+ip route add 192.168.0.0/24 dev eth0
+ip route del 192.168.0.0/24 dev eth0
+
+ip router add $network/prefix via $gateway dev $interface
+
 
 ```
