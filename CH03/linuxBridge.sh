@@ -18,4 +18,10 @@ sudo ip link set up dev veth1
 sudo ip link set up dev veth3
 sudo ip link set up dev br0
 
+sudo ip netns exec ns1 ip link set up dev eth0
+sudo ip netns exec ns1 ip addr add 10.56.8.4/24 dev eth0
+sudo ip addr add 10.58.8.1 dev br0
+
+sudo ip netns exec ns2 ip link set up dev eth0
+sudo ip netns exec ns2 ip addr add 10.56.9.5/24 dev eth0
 

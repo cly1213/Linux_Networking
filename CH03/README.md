@@ -47,4 +47,10 @@ ip route del 192.168.0.0/24 dev eth0
 ip router add $network/prefix via $gateway dev $interface
 
 
+### Iptables
+```
+
+```
+
+
 ```
