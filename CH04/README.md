@@ -67,8 +67,34 @@ sudo ip link set dev docker0 promisc on
 sudo ip link set dev docker0 promisc off
 ```
 
+```
+ps auxw | grep docker-proxy
+
+sudo iptables-save -t nat -c
+
+sudo tcpdump -vvvvln -i docker0
+sudo tcpdump -vvvvln -i veth026bc26
+
+#Inside container 
+netstat -naltp
+```
+
 #### SNAT + DNAT
 Ex: Kubernates Service
+
+
+### Conntrack
+```
+curl google.com
+
+sudo conntrack -L
+
+docker run -d --name www -p 12345:8000 netutils:python
+
+sudo iptables -t filter -D FORWARD -o docker0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+
+nc 172.17.8.222 12345 #Create connection
+```
 
 
 
