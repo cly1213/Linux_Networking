@@ -55,7 +55,9 @@ lsof /dev/net/tun
 ## Site To Site
 ### IP in IP Tunnel
 <img src="https://github.com/cly1213/Linux_networking/blob/main/CH06/image/ipinip.png"/>
+
 ```
+
 於 Host1 上面創立 IP-IP Tunnel
 
 sudo ip tunnel add tunnel0 mode ipip remote 172.18.2.4 local 172.18.2.3
@@ -94,5 +96,7 @@ ip addr add 192.168.1.1/24 dev tunnel0
 
 host2
 ip addr add 192.168.1.254/24 dev tunnel0
+
 ```
+
 K8s也使用此方法
