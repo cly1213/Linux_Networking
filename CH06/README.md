@@ -97,6 +97,8 @@ ip addr add 192.168.1.1/24 dev tunnel0
 host2
 ip addr add 192.168.1.254/24 dev tunnel0
 
+sudo iptables -t filter -P FORWARD -s 192.168.1.0/24 -d 10.66.0.0/24 -j ACCEPT
+
 ```
 
 K8s也使用此方法
