@@ -54,7 +54,7 @@ lsof /dev/net/tun
 ## Network Tunneling
 ## Site To Site
 ### IP in IP Tunnel
-<img src="https://github.com/cly1213/Linux_networking/blob/main/CH06/image/ipinip.png"/
+<img src="https://github.com/cly1213/Linux_networking/blob/main/CH06/image/ipinip.png"/>
 ```
 於 Host1 上面創立 IP-IP Tunnel
 
