@@ -11,4 +11,4 @@ $ ./client
 Hello message sent
 Hello from server
 ```
-![image](https://github.com/cly1213/socket/blob/master/Socket.jpg)
+![image](https://github.com/cly1213/Linux_Networking/blob/main/socket/Socket.jpg)
