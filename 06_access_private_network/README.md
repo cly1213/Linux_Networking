@@ -7,7 +7,7 @@
 ## VPN Implementation
 ### Tun/Tap
 - OpenVPN
-<img src="https://github.com/cly1213/Linux_networking/blob/main/CH06/image/openvpn.png"/>
+<img src="https://github.com/cly1213/Linux_networking/blob/main/06_access_private_network/image/openvpn.png"/>
 
 # VPN
 ## Client to site
@@ -54,9 +54,8 @@ lsof /dev/net/tun
 ## Network Tunneling
 ## Site To Site
 ### IP in IP Tunnel
-<img src="https://github.com/cly1213/Linux_networking/blob/main/CH06/image/ipinip.png"/>
-
 ```
+<img src="https://github.com/cly1213/Linux_networking/blob/main/06_access_private_network/image/ipinip.png"/>
 
 於 Host1 上面創立 IP-IP Tunnel
 
