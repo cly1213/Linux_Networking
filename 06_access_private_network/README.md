@@ -50,13 +50,16 @@ sudo systemctl stop openvpn@client
 
 觀察使用的 tun0 的 process
 lsof /dev/net/tun
+
 ```
+
 ## Network Tunneling
 ## Site To Site
 ### IP in IP Tunnel
-```
+
 <img src="https://github.com/cly1213/Linux_networking/blob/main/06_access_private_network/image/ipinip.png"/>
 
+```
 於 Host1 上面創立 IP-IP Tunnel
 
 sudo ip tunnel add tunnel0 mode ipip remote 172.18.2.4 local 172.18.2.3
